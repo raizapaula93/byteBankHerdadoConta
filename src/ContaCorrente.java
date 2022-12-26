@@ -1,4 +1,4 @@
-public class ContaCorrente extends Conta { //na herança herda-se atributos e métodos, mas não os construtores
+public class ContaCorrente extends Conta implements Tributavel { //na herança herda-se atributos e métodos, mas não os construtores
 
 
     public ContaCorrente(int agencia, int numero) {
@@ -6,9 +6,19 @@ public class ContaCorrente extends Conta { //na herança herda-se atributos e m�
     }
 
     @Override
+    public void deposita(double valor) {
+        super.saldo +=valor;
+    }
+
+    @Override
     public boolean saca(double valor) {
         double valorASacar = valor+ 0.2;
         return super.saca(valorASacar);
+    }
+
+    @Override
+    public double getValorImposto() {
+        return super.saldo*0.01;
     }
 }
 

@@ -1,3 +1,5 @@
+package br.com.bytebank.banco.modelo;
+
 public class ContaCorrente extends Conta implements Tributavel { //na herança herda-se atributos e métodos, mas não os construtores
 
 

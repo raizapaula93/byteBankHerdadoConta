@@ -1,5 +1,7 @@
+package br.com.bytebank.banco.modelo;
+
 public abstract class Conta {
-        protected double saldo;
+        double saldo;//só é visivel dentro do pacote, msm q tenha herança
         private int agencia;
         private int numero;
         private Cliente titular;

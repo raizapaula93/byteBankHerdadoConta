@@ -1,5 +1,12 @@
 package br.com.bytebank.banco.modelo;
 
+/**
+ * Classe representa a moldura de um conta
+ *
+ * @author raiza de paula
+ */
+
+
 public abstract class Conta {
         double saldo;//só é visivel dentro do pacote, msm q tenha herança
         private int agencia;
